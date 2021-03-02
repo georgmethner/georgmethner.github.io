@@ -10,14 +10,14 @@ h1
 }
 
 .card {
-    position: relative;
+    position: absolute;
     top: 50%;
 }
 
 .box {
     border-radius: 25px;
     background-color: rgb(233, 233, 233);
-    box-shadow: 28px 28px 50px 0 rgba(5,15,31,0.16), -23px -23px 45px 0 #f3f3f3;    
+    box-shadow: 28px 28px 50px 0 rgba(5,15,31,0.16);    
 
     overflow: hidden;
 
