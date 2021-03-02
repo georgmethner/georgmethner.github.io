@@ -9,42 +9,49 @@ h1
     margin-left: 20px;
 }
 
+.card {
+    position: absolute;
+    top: 50%;
+}
+
 .box {
     border-radius: 25px;
     background-color: rgb(233, 233, 233);
-    box-shadow: 28px 28px 50px 0 rgba(5,15,31,0.16), -23px -23px 45px 0 #f3f3f3;
+    box-shadow: 28px 28px 50px 0 rgba(5,15,31,0.16), -23px -23px 45px 0 #f3f3f3;    
+
+    overflow: hidden;
 
     transform: translate(-50%, -50%); 
     position: absolute;
-    left: 50%;
-    top: 50%;
-    height: 400px;
-    width: 400px;
+    height: 800px;
+    width: 470px;
+    z-index: 0;
 
     transition: height 0.2s, width 0.2s;
 }
 
 .box:hover {
-    height: 450px;
-    width: 450px;
+    height: 850px;
+    width: 530px;
+    z-index: 1;
 
     transition: height 0.2s, width 0.2s;
 }
 
-.box:hover .boxtext {
+.box:hover ~ .boxtext {
     position: relative;
-    bottom: 75px;
+    bottom: 500px;
     opacity: 100%;
 
     transition: bottom 0.2s, opacity 0.2s;
 }
 
 .boxtext {
+    transform: translate(-50%, -50%); 
     font-family: monospace;
     font-size: 30px;
-    text-align: center;
     position: relative;
-    bottom: 60px;
+    bottom: 450px;
     opacity: 0%;
 
     transition: bottom 0.2s, opacity 0.2s;
@@ -55,7 +62,7 @@ h1
     position:fixed;
     left: 50%;
     top: 50%;
-    height: 95%;
-    width: 70%;
+    height: 1014;
+    width: 1904;
     border-radius: 15px;
 }
