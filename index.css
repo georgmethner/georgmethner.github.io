@@ -30,8 +30,19 @@ body
     .box:hover {
         width: 13.5vw;
         height: 65vh;
-    
         transition: height 0.2s, width 0.2s;
+    }
+    .box:hover ~ .boxtext {
+        position: relative;
+        bottom: 38vh;
+        opacity: 100%;
+        transition: bottom 0.2s, opacity 0.2s;
+    }
+    .boxtext {
+        bottom: 35vh;
+        opacity: 0%;
+    
+        transition: bottom 0.2s, opacity 0.2s;
     }
 }
 
@@ -54,22 +65,33 @@ body
     .box:hover {
         width: 18.2vw;
         height: 65vh;
-    
         transition: height 0.2s, width 0.2s;
+    }
+    .box:hover ~ .boxtext {
+        position: relative;
+        bottom: 38vh;
+        opacity: 100%;
+        transition: bottom 0.2s, opacity 0.2s;
+    }
+    .boxtext {
+        bottom: 35vh;
+        opacity: 0%;
+    
+        transition: bottom 0.2s, opacity 0.2s;
     }
 }
 
 @media only screen and (max-width: 1400px)  {
     #card1 {
-        margin-top: 0vh;
+        margin-top: -30vh;
         z-index: 3;
     }
     #card2 {
-        margin-top: 30vh;
+        margin-top: 0vh;
         z-index: 2;
     }
     #card3 {
-        margin-top: 60vh;
+        margin-top: 30vh;
         z-index: 1;
     }
     .box {
@@ -79,7 +101,6 @@ body
     .box:hover {
         width: 82vw;
         height: 28vh;
-    
         transition: height 0.2s, width 0.2s;
     }
     .card {
@@ -87,6 +108,21 @@ body
     }
     body {
         height: 150vh;
+    }
+    .box:hover ~ .boxtext {
+        opacity: 100%;
+        transition: opacity 0.2s;
+    }
+    .box:hover .image {
+        opacity: 30%;
+        transition: opacity 0.2s;
+    }
+    .boxtext {
+        position: static;
+        opacity: 0%;
+        top: 50%;
+    
+        transition: opacity 0.2s;
     }
 }
 
@@ -103,32 +139,25 @@ body
     transition: height 0.2s, width 0.2s;
 }
 
-.box:hover ~ .boxtext {
-    position: relative;
-    bottom: 500px;
-    opacity: 100%;
-
-    transition: bottom 0.2s, opacity 0.2s;
-}
-
 .boxtext {
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -110%); 
+    text-align: center;
     font-family: monospace;
     font-size: 30px;
     position: relative;
-    bottom: 450px;
-    opacity: 0%;
-
-    transition: bottom 0.2s, opacity 0.2s;
 }
 
 .image {
     transform: translate(-50%, -50%); 
     position:fixed;
+    object-fit: cover;
     left: 50%;
     top: 50%;
-    height: 1014;
-    width: 1904;
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
+    opacity: 100%;
     z-index: 1;
+
+    transition: opacity 0.2s
 }
