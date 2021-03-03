@@ -2,51 +2,103 @@ body
 {
     background-color: rgb(233, 233, 233);
 }
-  
-h1 
-{
-    color: navy;
-    margin-left: 20px;
-}
 
 .card {
     position: fixed;
     top: 50%;
+    margin-left: 50%;
 }
 
 
-@media only screen  {
+@media only screen and (min-width: 1921px) {
     #card1 {
         margin-left: calc(50% - 14vw);
+        z-index: 3;
     }
     #card2 {
         margin-left: 50%;
+        z-index: 2;
     }
     #card3 {
         margin-left: calc(50% + 14vw);
+        z-index: 1;
+    }
+    .box {
+        width: 13vw;
+        height: 60vh;
+    }
+    .box:hover {
+        width: 13.5vw;
+        height: 65vh;
+    
+        transition: height 0.2s, width 0.2s;
+    }
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 1401px)  {
+    #card1 {
+        margin-left: calc(50% - 19vw);
+        z-index: 3;
+    }
+    #card2 {
+        z-index: 2;
+    }
+    #card3 {
+        margin-left: calc(50% + 19vw);
+        z-index: 1;
+    }
+    .box {
+        width: 18vw;
+        height: 60vh;
+    }
+    .box:hover {
+        width: 18.2vw;
+        height: 65vh;
+    
+        transition: height 0.2s, width 0.2s;
+    }
+}
+
+@media only screen and (max-width: 1400px)  {
+    #card1 {
+        margin-top: 0vh;
+        z-index: 3;
+    }
+    #card2 {
+        margin-top: 30vh;
+        z-index: 2;
+    }
+    #card3 {
+        margin-top: 60vh;
+        z-index: 1;
+    }
+    .box {
+        width: 80vw;
+        height: 26vh;
+    }
+    .box:hover {
+        width: 82vw;
+        height: 28vh;
+    
+        transition: height 0.2s, width 0.2s;
+    }
+    .card {
+        position: absolute;
+    }
+    body {
+        height: 150vh;
     }
 }
 
 .box {
     border-radius: 25px;
     background-color: rgb(233, 233, 233);
-    box-shadow: 28px 28px 50px 0 rgba(5,15,31,0.16);    
+    box-shadow: 28px 28px 50px 0 rgba(5,15,31,0.16), -23px -23px 45px 0 rgb(255, 255, 255), -31px -31px 43px 0 rgba(255, 255, 255, 0.64), 26px 26px 48px 0 rgba(5,15,31,0.16);    
 
     overflow: hidden;
 
     transform: translate(-50%, -50%); 
     position: absolute;
-    width: 13vw;
-    height: 60vh;
-    z-index: 0;
-
-    transition: height 0.2s, width 0.2s;
-}
-
-.box:hover {
-    width: 13.5vw;
-    height: 65vh;
-    z-index: 1;
 
     transition: height 0.2s, width 0.2s;
 }
@@ -78,4 +130,5 @@ h1
     height: 1014;
     width: 1904;
     border-radius: 15px;
+    z-index: 1;
 }
