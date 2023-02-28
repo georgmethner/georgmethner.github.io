@@ -1,186 +1,120 @@
-body 
-{
-    background-color: rgb(233, 233, 233);
+body {
+    background-color: rgb(49, 51, 59);
 }
 
 @font-face {
     font-family: "CustomFont";
     src: url("/Font/integralcf-bold-webfont.woff") format("woff"),
-} 
-
-.card {
-    position: fixed;
-    top: 50%;
-    margin-left: 50%;
 }
 
-#card1press {
-    position: absolute;
-    width: 50%;
-    z-index: 3;
-}
-#card2press {
-    position: absolute;
-    width: 50%;
-    z-index: 2;
-}
-#card3press {
-    position: absolute;
-    width: 50%;
-    z-index: 1;
+.header {
+    color: white;
+    font-size: 100px;
+    text-align: left;
+    padding-top: 500px;
+    padding-left: 500px;
 }
 
-
-@media only screen and (min-width: 1921px) {
-    #card1 {
-        margin-left: calc(50% - 14vw);
-        z-index: 3;
-    }
-    #card2 {
-        margin-left: 50%;
-        z-index: 2;
-    }
-    #card3 {
-        margin-left: calc(50% + 14vw);
-        z-index: 1;
-    }
-
-    .box {
-        width: 13vw;
-        height: 60vh;
-    }
-    .box:hover {
-        width: 13.5vw;
-        height: 65vh;
-        transition: height 0.2s, width 0.2s;
-    }
-    .box:hover ~ .boxtext {
-        position: relative;
-        bottom: 38vh;
-        opacity: 100%;
-        transition: bottom 0.2s, opacity 0.2s;
-    }
-    .boxtext {
-        bottom: 35vh;
-        opacity: 0%;
-    
-        transition: bottom 0.2s, opacity 0.2s;
-    }
-}
-
-@media only screen and (max-width: 1920px) and (min-width: 1401px)  {
-    #card1 {
-        margin-left: calc(50% - 19vw);
-        z-index: 3;
-    }
-    #card2 {
-        z-index: 2;
-    }
-    #card3 {
-        margin-left: calc(50% + 19vw);
-        z-index: 1;
-    }
-    .box {
-        width: 18vw;
-        height: 60vh;
-    }
-    .box:hover {
-        width: 18.2vw;
-        height: 65vh;
-        transition: height 0.2s, width 0.2s;
-    }
-    .box:hover ~ .boxtext {
-        position: relative;
-        bottom: 38vh;
-        opacity: 100%;
-        transition: bottom 0.2s, opacity 0.2s;
-    }
-    .boxtext {
-        bottom: 35vh;
-        opacity: 0%;
-    
-        transition: bottom 0.2s, opacity 0.2s;
-    }
-}
-
-@media only screen and (max-width: 1400px)  {
-    #card1 {
-        margin-top: -30vh;
-        z-index: 3;
-    }
-    #card2 {
-        margin-top: 0vh;
-        z-index: 2;
-    }
-    #card3 {
-        margin-top: 30vh;
-        z-index: 1;
-    }
-    .box {
-        width: 80vw;
-        height: 26vh;
-    }
-    .box:hover {
-        width: 82vw;
-        height: 28vh;
-        transition: height 0.2s, width 0.2s;
-    }
-    .card {
-        position: absolute;
-    }
-    body {
-        height: 150vh;
-    }
-    .box:hover ~ .boxtext {
-        opacity: 100%;
-        transition: opacity 0.2s;
-    }
-    .box:hover .image {
-        opacity: 30%;
-        transition: opacity 0.2s;
-    }
-    .boxtext {
-        position: static;
-        opacity: 0%;
-        top: 50%;
-    
-        transition: opacity 0.2s;
-    }
-}
-
-.box {
-    border-radius: 25px;
-    background-color: rgb(233, 233, 233);
-    box-shadow: 28px 28px 50px 0 rgba(5,15,31,0.16), -23px -23px 45px 0 rgb(255, 255, 255), -31px -31px 43px 0 rgba(255, 255, 255, 0.64), 26px 26px 48px 0 rgba(5,15,31,0.16);    
-
+.header {
+    width: 14ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
     overflow: hidden;
+    border-right: 3px solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
 
-    transform: translate(-50%, -50%); 
-    position: absolute;
+/*Front page with Name*/
+.rect {
+    background-color: rgb(52, 53, 58);
+    width: 100%;
+    height: 100vh;
+    position:absolute;
+    box-shadow: 0px 28px 50px 0 rgba(0, 0, 0, 0.297);
+}
 
-    transition: height 0.2s, width 0.2s;
+/*Skill cards*/
+.cards {
+    padding-top: 150vh;
+    left: 50%;
+    display: grid;
+    row-gap: 50px;
+    column-gap: 50px;
+    position:absolute;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+}
+
+/*Box for Skill cards*/
+#box {
+    width: 12vw;
+    height: 12vw;
+}
+
+#box {
+    border-radius: 50px;
+    background-color: rgb(61, 62, 66);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    transform: translate(-50%, -50%);
+
+    transition: height 0.2s, width 0.2s, background-color 0.3s;
+}
+
+#box:hover {
+    width: 12.5vw;
+    height: 12.5vw;
+    background-color: rgb(240, 191, 108);
+    transition: height 0.2s, width 0.2s, background-color 0.2s;
 }
 
 .boxtext {
-    transform: translate(-50%, -110%); 
-    text-align: center;
-    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 750;
+    font-size: 38px;
+    color: white;
+    transition: color 0.2s;
+}
+
+.boxtext {
+    top: 23vh;
+    left: 50%;
+    opacity: 100%;
+    transform: translate(-50%, -110%);
     position: relative;
     user-select: none;
+
+    text-align: center;
+}
+
+#box:hover .boxtext {
+    color: rgb(0, 0, 0);
+    transition: color 0.2s;
 }
 
 .image {
-    transform: translate(-50%, -50%); 
-    position:fixed;
-    object-fit: cover;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    object-fit: contain;
     left: 50%;
-    top: 50%;
-    width: 100%;
-    height: 100%;
+    top: 40%;
+    width: 40%;
+    height: 40%;
     border-radius: 15px;
     opacity: 100%;
     z-index: 1;
-    user-select:contain;
+    user-select: contain;
 
     transition: opacity 0.2s
 }

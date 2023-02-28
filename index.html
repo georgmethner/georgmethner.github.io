@@ -2,28 +2,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
 <html>
-    <link rel="stylesheet" href="index.css">
-    <script type="text/javascript" src="index.js"></script>
-    <body>
-        <div class="card" id="card1" onclick="card1press()">
-            <div class="box">
-                <img class="image" src="renderedBunny.PNG" alt="Stanford Bunny" draggable="false">
-            </div>
-            <p class="boxtext">Voxel Development</p>
+<link rel="stylesheet" href="index.css">
+<script type="text/javascript" src="index.js"></script>
+
+<body>
+    <div class="rect">
+        <h1 class="header">Georg Methner.</h1>
+    </div>
+    <div class="cards">
+        <div class="card" id="box" onclick="card1press()">
+            <img class="image" src="Icons/c_icon.png" alt="C" draggable="false">
+            <p class="boxtext">C++ & C#</p>
         </div>
 
-        <div class="card" id="card2" onclick="card2press()">
-            <div class="box">
-                <img class="image" src="opengl.png" alt="OpenGL" draggable="false">
-            </div>
-            <p class="boxtext">Experience with OpenGL</p>
+        <div class="card" id="box" onclick="card2press()">
+            <img class="image" src="Icons/java_icon.png" alt="Java" draggable="false">
+            <p class="boxtext">Java</p>
         </div>
 
-        <div class="card" id="card3" onclick="card3press()">
-            <div class="box">
-                <img class="image" src="hollowknight2.png" alt="Hollow Knight" draggable="false">
-            </div>
-            <p class="boxtext">Hollow Knight</p>
+        <div class="card" id="box" onclick="card3press()">
+            <img class="image" src="Icons/unity_icon.png" alt="Unity" draggable="false">
+            <p class="boxtext">Unity</p>
         </div>
-    </body>
+
+        <div class="card" id="box" onclick="card4press()">
+            <img class="image" src="Icons/shader_icon.png" alt="Shader Development" draggable="false">
+            <p class="boxtext">GLSL/HLSL</p>
+        </div>
+
+        <div class="card" id="box" onclick="card5press()">
+            <img class="image" src="Icons/ue_icon.png" alt="Unity" draggable="false">
+            <p class="boxtext">Unreal Engine</p>
+        </div>
+
+        <div class="card" id="box" onclick="card6press()">
+            <img class="image" src="Icons/unity_icon.png" alt="Unity" draggable="false">
+            <p class="boxtext">Unity</p>
+        </div>
+    </div>
+</body>
+
 </html>
