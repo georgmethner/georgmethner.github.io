@@ -1,5 +1,8 @@
 body {
     background-color: rgb(49, 51, 59);
+
+    margin: 0;
+   padding: 0;
 }
 
 @font-face {
@@ -20,7 +23,9 @@ body {
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
+    
     border-right: 3px solid;
+    border-top: 3px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
@@ -41,20 +46,22 @@ body {
     background-color: rgb(52, 53, 58);
     width: 100%;
     height: 100vh;
+    padding: 0;
     position:absolute;
+
     box-shadow: 0px 28px 50px 0 rgba(0, 0, 0, 0.297);
 }
 
 /*Skill cards*/
 .cards {
     padding-top: 150vh;
-    left: 50%;
     display: grid;
     row-gap: 50px;
     column-gap: 50px;
-    position:absolute;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
 }
 
 /*Box for Skill cards*/
