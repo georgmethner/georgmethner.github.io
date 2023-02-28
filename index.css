@@ -3,10 +3,31 @@ body
     background-color: rgb(233, 233, 233);
 }
 
+@font-face {
+    font-family: "CustomFont";
+    src: url("/Font/integralcf-bold-webfont.woff") format("woff"),
+} 
+
 .card {
     position: fixed;
     top: 50%;
     margin-left: 50%;
+}
+
+#card1press {
+    position: absolute;
+    width: 50%;
+    z-index: 3;
+}
+#card2press {
+    position: absolute;
+    width: 50%;
+    z-index: 2;
+}
+#card3press {
+    position: absolute;
+    width: 50%;
+    z-index: 1;
 }
 
 
@@ -23,6 +44,7 @@ body
         margin-left: calc(50% + 14vw);
         z-index: 1;
     }
+
     .box {
         width: 13vw;
         height: 60vh;
@@ -142,7 +164,6 @@ body
 .boxtext {
     transform: translate(-50%, -110%); 
     text-align: center;
-    font-family: monospace;
     font-size: 30px;
     position: relative;
     user-select: none;
@@ -159,6 +180,7 @@ body
     border-radius: 15px;
     opacity: 100%;
     z-index: 1;
+    user-select:contain;
 
     transition: opacity 0.2s
 }
