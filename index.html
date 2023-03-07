@@ -8,10 +8,15 @@
 <script src="p5.min.js"></script>
 <script type="text/javascript" src="index.js"></script>
 <script src="dunes.js"></script>
+<script>
+    window.onload = function() {setTimeout(function(){document.body.style.opacity="100";},500);};
+</script>
 
 
+<body  id="body" style="opacity:0;">
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=.01)" />
+    <meta http-equiv="Page-Exit" content="blendTrans(Duration=.01)" />
 
-<body>
     <div class="rect" id="dunes">
         <div class="text1" id="header">Georg Methner</div>
         <div class="text1" id="introduction">developer specialized in game development and image processing</div>
