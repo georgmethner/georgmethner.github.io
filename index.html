@@ -3,12 +3,26 @@
 
 <html>
 <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="screenSizes.css">
+
+<script src="p5.min.js"></script>
 <script type="text/javascript" src="index.js"></script>
+<script src="dunes.js"></script>
+
+
 
 <body>
-    <div class="rect">
-        <h1 class="header">Georg Methner.</h1>
+    <div class="rect" id="dunes">
+        <div class="text1" id="header">Georg Methner</div>
+        <div class="text1" id="introduction">developer specialized in game development and image processing</div>
     </div>
+    <div class="text1" id="about">
+        My name is Georg Methner, a passionate developer from Düsseldorf, Germany. 
+        Currently, I am pursuing my education and will be graduating this year. 
+        My enthusiasm lies in exploring and experimenting with various rendering techniques and simulations.
+    </div>
+
+    <div class="text1" id="skills">my toolset</div>
     <div class="cards">
         <div class="card" id="box" onclick="card1press()">
             <img class="image" src="Icons/c_icon.png" alt="C" draggable="false">
@@ -36,7 +50,7 @@
         </div>
 
         <div class="card" id="box" onclick="card6press()">
-            <img class="image" src="Icons/unity_icon.png" alt="Unity" draggable="false">
+            <img class="image" src="Icons/html_icon.png" alt="Unity" draggable="false">
             <p class="boxtext">Unity</p>
         </div>
     </div>

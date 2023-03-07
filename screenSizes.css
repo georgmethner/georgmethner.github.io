@@ -1,0 +1,81 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #introduction {
+        width: 90%;
+        font-size: 20px;
+        top:calc(30%+1vh);
+    }
+    #header {
+        width: 90%;
+        top: 30%;
+        font-size: 30px;    
+    }
+    #about {
+        width: 90%;
+        font-size: 20px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #introduction {
+        font-size: 30px;
+        top:40%;
+        text-align: center;
+    }
+    #header {
+        font-size: 30px;    
+        top: 30%;
+        text-align: center;
+    }
+    #about {
+        font-size: 30px;
+        text-align: center;
+        padding-top: calc(100vh + 150px);
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #introduction {
+        font-size: 35px;
+        top: 50%;
+    }
+    #header {
+        font-size: 35px;
+        top:20%;
+    }
+    #about {
+        font-size: 35px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #introduction {
+        font-size: 40px;
+        top: 50%;
+    }
+    #header {
+        font-size: 40px;
+        top:20%;
+    }
+    #about {
+        font-size: 35px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #introduction {
+        font-size: 50px;
+        top: 50%;
+    }
+    #header {
+        font-size: 50px;
+        top:20%;
+    }
+    #about {
+        font-size: 35px;
+    }
+}
