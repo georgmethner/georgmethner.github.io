@@ -2,7 +2,7 @@
 @media only screen and (max-width: 600px) {
     #introduction {
         width: 90%;
-        font-size: 20px;
+        font-size: 25px;
         top:calc(30%+1vh);
     }
     #header {
@@ -13,6 +13,18 @@
     #about {
         width: 90%;
         font-size: 20px;
+        padding-top: calc(100vh + 120px);
+    }
+    .cards {
+        grid-template-columns: repeat(2, calc((100vw - 40px) / 2));
+        grid-template-rows: repeat(3, calc((100vw - 40px) / 2));
+    }
+    #box {
+        width: calc((100vw - 40px) / 2);
+        height: calc((100vw - 40px) / 2);
+    }
+    .boxtext {
+        font-size: 30px;
     }
 }
 
@@ -33,35 +45,74 @@
         text-align: center;
         padding-top: calc(100vh + 150px);
     }
+    .cards {
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-columns: repeat(3, calc((100vw - 40px) / 3));
+        grid-template-rows: repeat(2, calc((100vw - 40px) / 3));
+    }
+    #box {
+        width: calc((100vw - 40px) / 3);
+        height: calc((100vw - 40px) / 3);
+    }
+    .boxtext {
+        font-size: 30px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     #introduction {
-        font-size: 35px;
+        font-size: 28px;
         top: 50%;
     }
     #header {
-        font-size: 35px;
+        font-size: 28px;
         top:20%;
     }
     #about {
-        font-size: 35px;
+        font-size: 28px;
+    }
+    .cards {
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-columns: repeat(3, calc((100vw - 300px) / 3));
+        grid-template-rows: repeat(2, calc((100vw - 300px) / 3));
+    }
+    #box {
+        width: calc((100vw - 300px) / 3);
+        height: calc((100vw - 300px) / 3);
+    }
+    .boxtext {
+        font-size: 30px;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     #introduction {
-        font-size: 40px;
+        font-size: 35px;
         top: 50%;
     }
     #header {
-        font-size: 40px;
+        font-size: 35px;
         top:20%;
     }
     #about {
         font-size: 35px;
+    }
+    .cards {
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-columns: repeat(3, calc((100vw - 500px) / 3));
+        grid-template-rows: repeat(2, calc((100vw - 500px) / 3));
+    }
+    #box {
+        width: calc((100vw - 500px) / 3);
+        height: calc((100vw - 500px) / 3);
+    }
+    .boxtext {
+        font-size: 30px;
     }
 }
 
@@ -77,5 +128,18 @@
     }
     #about {
         font-size: 35px;
+    }
+    .cards {
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-columns: repeat(6, calc((100vw - 800px) / 6));
+        grid-template-rows: repeat(1, calc((100vw - 800px) / 6));
+    }
+    #box {
+        width: calc((100vw - 800px) / 6);
+        height: calc((100vw - 800px) / 6);
+    }
+    .boxtext {
+        font-size: 30px;
     }
 }
