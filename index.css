@@ -158,7 +158,6 @@ body {
     position: absolute;
     object-fit: contain;
 
-    transform-origin: center center;
     left: 0;
     right: 0;
     margin-left: auto;
