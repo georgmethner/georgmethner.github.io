@@ -118,9 +118,9 @@ body {
 #box {
     width: 12vw;
     height: 12vw;
+    transform: scale(110%, 110%);
 
     border-radius: 0vw;
-    transform-origin: center center;
     transition: transform 0.2s, background-color 0.3s;
 }
 
@@ -133,7 +133,6 @@ body {
 .boxtext {
     font-family: 'Times New Roman', Times, serif;
     font-size: 38px;
-    transform: scale(110%, 110%);
 
     color: white;
     filter: brightness(180%);
