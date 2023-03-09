@@ -74,7 +74,7 @@ body {
 
 #skills {
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 150px;
     font-size: 50px;
     text-align: center;
     width: 50%;
@@ -101,7 +101,7 @@ body {
 
 /*Skill cards*/
 .cards {
-    padding-top: 30vh;
+    padding-top: 10vh;
     display: grid;
 
     row-gap: 15px;
@@ -130,7 +130,6 @@ body {
 
 .boxtext {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 38px;
 
     color: white;
     filter: brightness(180%);
@@ -138,7 +137,7 @@ body {
 }
 
 .boxtext {
-    top: 23vh;
+    top: 75%;
     left: 50%;
     opacity: 100%;
     transform: translate(-50%, -110%);
