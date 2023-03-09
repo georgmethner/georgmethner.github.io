@@ -133,6 +133,8 @@ body {
 .boxtext {
     font-family: 'Times New Roman', Times, serif;
     font-size: 38px;
+    transform: scale(110%, 110%);
+
     color: white;
     filter: brightness(180%);
     transition: color 0.2s;
