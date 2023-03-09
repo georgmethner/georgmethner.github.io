@@ -149,6 +149,7 @@ body {
 
 .image {
     position: absolute;
+    object-fit: contain;
 
     left: 0;
     right: 0;
