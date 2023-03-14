@@ -100,7 +100,7 @@ body {
 }
 
 /*Skill cards*/
-.cards {
+.skillCards {
     padding-top: 10vh;
     display: grid;
 
@@ -116,14 +116,40 @@ body {
 }
 
 /*Box for Skill cards*/
-#box {
+#skillBox {
     width: 350px;
     height: 350px;
-    transform: scale(100%, 100%);
     transition: transform 0.2s;
 }
 
-#box:hover {
+#skillBox:hover {
+    transform: scale(110%, 110%);
+    transition: transform 0.2s;
+}
+
+.projectCards {
+    padding-top: 10vh;
+    display: grid;
+
+    row-gap: 15px;
+    column-gap: 15px;
+    width: 100%;
+
+    grid-template-columns: repeat(6, 12vw);
+    grid-template-rows: repeat(1, 12vw);
+
+    justify-content: center;
+    align-items: center;
+}
+
+/*Box for Skill cards*/
+#projectBox {
+    width: 350px;
+    height: 550px;
+    transition: transform 0.2s;
+}
+
+#projectBox:hover {
     transform: scale(110%, 110%);
     transition: transform 0.2s;
 }

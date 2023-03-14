@@ -15,14 +15,23 @@
         font-size: 20px;
         padding-top: calc(100vh + 120px);
     }
-    .cards {
+    .skillCards {
         grid-template-columns: repeat(2, calc((100vw - 40px) / 2));
         grid-template-rows: repeat(3, calc((100vw - 40px) / 2));
     }
-    #box {
+    #skillBox {
         width: calc((100vw - 40px) / 2);
         height: calc((100vw - 40px) / 2);
     }
+    .projectCards {
+        grid-template-columns: repeat(2, calc((100vw - 40px) / 2));
+        grid-template-rows: repeat(3, calc((120vw - 40px) / 2));
+    }
+    #projectBox {
+        width: calc((100vw - 40px) / 2);
+        height: calc((120vw - 40px) / 2);
+    }
+
     .boxtext {
         font-size: 20px;
     }
@@ -45,16 +54,28 @@
         text-align: center;
         padding-top: calc(100vh + 150px);
     }
-    .cards {
+    .skillCards {
         row-gap: 10px;
         column-gap: 10px;
         grid-template-columns: repeat(3, calc((100vw - 40px) / 3));
         grid-template-rows: repeat(2, calc((100vw - 40px) / 3));
     }
-    #box {
+    #skillBox {
         width: calc((100vw - 40px) / 3);
         height: calc((100vw - 40px) / 3);
     }
+
+    .projectCards {
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-columns: repeat(3, calc((100vw - 40px) / 3));
+        grid-template-rows: repeat(2, calc((120vw - 40px) / 3));
+    }
+    #projectBox {
+        width: calc((100vw - 40px) / 3);
+        height: calc((120vw - 40px) / 3);
+    }
+
     .boxtext {
         font-size: 30px;
     }
@@ -73,15 +94,22 @@
     #about {
         font-size: 28px;
     }
-    .cards {
-        row-gap: 10px;
-        column-gap: 10px;
+    .skillCards {
         grid-template-columns: repeat(3, calc((100vw - 300px) / 3));
         grid-template-rows: repeat(2, calc((100vw - 300px) / 3));
     }
-    #box {
+    #skillBox {
         width: calc((100vw - 300px) / 3);
         height: calc((100vw - 300px) / 3);
+    }
+
+    .projectCards {
+        grid-template-columns: repeat(3, calc((100vw - 300px) / 3));
+        grid-template-rows: repeat(2, calc((120vw - 300px) / 3));
+    }
+    #projectBox {
+        width: calc((100vw - 300px) / 3);
+        height: calc((120vw - 300px) / 3);
     }
     .boxtext {
         font-size: 25px;
@@ -101,16 +129,24 @@
     #about {
         font-size: 35px;
     }
-    .cards {
-        row-gap: 10px;
-        column-gap: 10px;
+    .skillCards {
         grid-template-columns: repeat(3, calc((100vw - 500px) / 3));
         grid-template-rows: repeat(2, calc((100vw - 500px) / 3));
     }
-    #box {
+    #skillBox {
         width: calc((100vw - 500px) / 3);
         height: calc((100vw - 500px) / 3);
     }
+
+    .projectCards {
+        grid-template-columns: repeat(3, calc((100vw - 500px) / 3));
+        grid-template-rows: repeat(2, calc((120vw - 500px) / 3));
+    }
+    #projectBox {
+        width: calc((100vw - 500px) / 3);
+        height: calc((120vw - 500px) / 3);
+    }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -126,15 +162,22 @@
     #about {
         font-size: 35px;
     }
-    .cards {
-        row-gap: 10px;
-        column-gap: 10px;
-        grid-template-columns: repeat(6, calc((100vw - 800px) / 6));
-        grid-template-rows: repeat(1, calc((100vw - 800px) / 6));
+    .skillCards {
+        grid-template-columns: repeat(6, min(calc((100vw - 800px) / 6), 300px));
+        grid-template-rows: repeat(1, min(calc((100vw - 800px) / 6), 300px));
     }
-    #box {
-        width: calc((100vw - 800px) / 6);
-        height: calc((100vw - 800px) / 6);
+    #skillBox {
+        width: min(calc((100vw - 800px) / 6), 300px);
+        height: min(calc((100vw - 800px) / 6), 300px);
+    }
+
+    .projectCards {
+        grid-template-columns: repeat(6, min(calc((100vw - 800px) / 6), 300px));
+        grid-template-rows: repeat(1, min(calc((120vw - 800px) / 6), 375px));
+    }
+    #projectBox {
+        width: min(calc((100vw - 800px) / 6), 300px);
+        height: min(calc((120vw - 800px) / 6), 375px);
     }
 
 }
